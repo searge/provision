@@ -1,0 +1,36 @@
+# Platform-specific excludes
+thumbs.db
+.DS_Store
+haslo
+
+# IDEs
+/.idea
+/.vscode/*
+/.buildpath
+/.cache
+/.metadata
+/.project
+/.settings
+/.gitattributes
+/.retry
+/nbproject
+/sitemap
+/templates/*
+
+# Add vscode workspace settings
+!.vscode/*.code-workspace
+
+# Python compiled files
+**.pyc
+
+# Provisioning
+/ansible/roles/*
+/ansible/*.retry
+
+# Tests
+/ansible/inventory/group_vars/test
+/ansible/inventory/test
+
+# Pipenv
+/.venv
+
