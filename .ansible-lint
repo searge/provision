@@ -13,12 +13,14 @@ exclude_paths:
   - .git/
   - .venv/ # implicit unless exclude_paths is defined in config
   - .vscode
+  - scripts/
   - ansible/roles/
+  - ansible/collections/
 
 use_default_rules: true
 
 kinds:
-  - inventory: "ansible/inventory/*"
+  - inventory: "ansible/inventory/*.yml"
   - playbook: "ansible/*.{yml,yaml}"
   - tasks: "ansible/includes/*.yml"
-  - vars: "ansible/inventory/group_vars/*"
+  - vars: "ansible/inventory/group_vars/*.yml"

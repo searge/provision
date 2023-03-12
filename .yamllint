@@ -3,10 +3,11 @@
 ignore: |
   .venv/
   ansible/roles/
-  ansible/inventory/*
+  ansible/collections/
 
 yaml-files:
-  - "ansible/inventory/group_vars/*"
+  - "ansible/inventory/group_vars/*.yml"
+  - "ansible/inventory/*.yml"
   - "**/*.yml"
   - "*.yml"
   - "*.yaml"
