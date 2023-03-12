@@ -1,3 +1,9 @@
 #!/usr/bin/env bash
 
-exec ansible-playbook "$@"
+# Change to the project root directory.
+cd $(dirname "${BASH_SOURCE[0]}")/.. && pwd
+
+# source the Python environment
+source scripts/utils/_ansible.sh
+
+wrap_command ansible-playbook "$@"
