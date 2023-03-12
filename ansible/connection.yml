@@ -1,0 +1,14 @@
+﻿---
+- name: Ping all
+  hosts:
+    - targets
+  # tests connection wuth ansible user pointed in inventory file
+  gather_facts: false
+  tasks:
+    - name: Ping the hosts
+      ansible.builtin.ping:
+      register: output
+
+    - name: Print the output
+      ansible.builtin.debug:
+        var: output
