@@ -1,0 +1,12 @@
+﻿---
+- name: Provision
+  hosts: targets
+  gather_facts: false
+  tasks:
+    - name: Get env var
+      ansible.builtin.set_fact:
+        ansible_python_interpreter: /usr/bin/python3
+        env_var: "{{ lookup('env', 'HOME') }}"
+    - name: Print env var
+      ansible.builtin.debug:
+        msg: "{{ env_var }}"
