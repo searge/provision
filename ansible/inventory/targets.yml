@@ -1,0 +1,6 @@
+---
+targets:
+  hosts:
+    target:
+      ansible_host: homebridge.local
+      ansible_user: sebor
