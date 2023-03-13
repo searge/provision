@@ -1,0 +1,40 @@
+[
+
+    // Rebind swap line up/down to cmd+shift+up/down
+    { "keys": ["cmd+shift+up"], "command": "swap_line_up" },
+    { "keys": ["cmd+shift+down"], "command": "swap_line_down" },
+
+    // Скопіювати усе
+    {
+    "keys": ["cmd+shift+c"],
+    "command": "copy_path_to_clipboard"
+    },
+
+    //AdvancedNewFile
+    { 
+    "keys": ["cmd+n"], "command": "advanced_new_file_new"
+	},
+
+    // Racket
+    {
+    "keys": ["'"], "command": "insert_snippet", "args": { "contents": "'" }, "context":
+    [
+      { "key": "selector", "operator": "equal", "operand": "source.racket" }
+    ]
+    },
+      { "keys": ["tab"], "command": "lispindent", "context": [
+      { "key": "setting.auto_indent", "operator": "equal", "operand": true },
+      { "key": "selection_empty", "operator": "equal", "operand": false, "match_all": true },
+      { "key": "selector", "operator": "equal", "operand": "source.racket" }
+    ]
+    },
+
+    // Markdown
+    {
+    "keys": ["tab"], "command": "bullet_indent", "context":
+    [
+    { "key": "selector", "operator": "equal", "operand": "text.html.markdown" }
+    ]
+    },
+
+]   
