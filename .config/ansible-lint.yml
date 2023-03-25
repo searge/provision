@@ -3,14 +3,18 @@
 
 # List of rules to to silence them completely:
 skip_list: # or 'warn_list' to ignore them but still show them
-  - command-instead-of-shell # Use shell only when shell functionality is required
-  - no-changed-when # Commands should not change things if nothing needs doing
+  # Use shell only when shell functionality is required
+  - command-instead-of-shell
+  # Commands should not change things if nothing needs doing
+  - no-changed-when
 
-# exclude_paths included in this file are parsed relative to this file's location
-# and not relative to the CWD of execution. CLI arguments passed to the --exclude
-# option will be parsed relative to the CWD of execution.
+# exclude_paths included in this file are parsed relative to this file's
+# location and not relative to the CWD of execution.
+# CLI arguments passed to the --exclude option will be parsed relative
+# to the CWD of execution.
 exclude_paths:
   - .git/
+  - .github/
   - .venv/ # implicit unless exclude_paths is defined in config
   - .vscode/
   - .config/

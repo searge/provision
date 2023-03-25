@@ -4,6 +4,7 @@ ignore: |
   .venv/
   ansible/roles/
   ansible/collections/
+  .config/
 
 yaml-files:
   - "ansible/inventory/group_vars/*.yml"
