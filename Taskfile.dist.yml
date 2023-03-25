@@ -1,12 +1,19 @@
 # https://taskfile.dev
 
-version: '3'
+version: "3"
+
+env:
+  ANSIBLE_CONFIG: "{{.USER_WORKING_DIR}}/ansible.cfg"
+  ANSIBLE_LINT_CONFIG: "{{.USER_WORKING_DIR}}/.config/ansible-lint.yml"
+  YAMLLINT_CONFIG_FILE: "{{.USER_WORKING_DIR}}/.config/yamllint.yml"
+
+dotenv: [".env.dist", ".env"]
 
 tasks:
   default:
     aliases: [play]
-    dir: '{{.USER_WORKING_DIR}}'  
-    desc: 'task play -- ansible/file.yml'
+    dir: "{{.USER_WORKING_DIR}}"
+    desc: "task play -- ansible/file.yml"
     summary: |
       Script for easy running playbooks
 
@@ -15,3 +22,20 @@ tasks:
     cmds:
       - bash ./scripts/play {{.CLI_ARGS}}
 
+  lint:
+    desc: "task lint"
+    summary: |
+      Script for easy running ansible-lint and yamllint
+
+      It runs linters with default config on the ansible directory.
+    deps: [ansible-lint, yamllint]
+
+  ansible-lint:
+    dir: "{{.USER_WORKING_DIR}}/ansible"
+    cmds:
+      - poetry run ansible-lint -c $ANSIBLE_LINT_CONFIG .
+
+  yamllint:
+    dir: "{{.USER_WORKING_DIR}}/ansible"
+    cmds:
+      - poetry run yamllint -c $YAMLLINT_CONFIG_FILE .

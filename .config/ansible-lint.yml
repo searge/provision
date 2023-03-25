@@ -1,6 +1,7 @@
 ﻿---
 # .ansible-lint
 
+# General configuration
 # List of rules to to silence them completely:
 skip_list: # or 'warn_list' to ignore them but still show them
   # Use shell only when shell functionality is required
@@ -13,9 +14,10 @@ skip_list: # or 'warn_list' to ignore them but still show them
 # CLI arguments passed to the --exclude option will be parsed relative
 # to the CWD of execution.
 exclude_paths:
+  - .cache/ # implicit unless exclude_paths is defined in config
   - .git/
   - .github/
-  - .venv/ # implicit unless exclude_paths is defined in config
+  - .venv/
   - .vscode/
   - .config/
   - scripts/
@@ -25,7 +27,10 @@ exclude_paths:
 use_default_rules: true
 
 kinds:
+  - playbook:  "ansible/*.yml"
+  - tasks:     "ansible/tasks/*.yml"
   - inventory: "ansible/inventory/*.yml"
-  - playbook: "ansible/*.{yml,yaml}"
-  - tasks: "ansible/includes/*.yml"
-  - vars: "ansible/inventory/group_vars/*.yml"
+  - vars:      "ansible/inventory/group_vars/*.yml"
+
+# Specific rules configuration
+var_naming_pattern: "^[a-z_][a-z0-9_]*$"

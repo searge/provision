@@ -1,10 +1,12 @@
 ﻿---
 # For all rules
 ignore: |
+  .cache/
+  .git/
   .venv/
+  .config/
   ansible/roles/
   ansible/collections/
-  .config/
 
 yaml-files:
   - "ansible/inventory/group_vars/*.yml"
