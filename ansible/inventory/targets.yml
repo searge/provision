@@ -2,5 +2,5 @@
 targets:
   hosts:
     target:
-      ansible_host: homebridge.local
-      ansible_user: sebor
+      ansible_host: fedora.local
+      ansible_user: searge
