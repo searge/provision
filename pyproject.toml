@@ -3,14 +3,14 @@ name = "provision"
 version = "0.1.0"
 description = "OS Provisioning"
 authors = ["Searge"]
-license = "MIT"
+license = "BSD 3-Clause"
 readme = "README.md"
 repository = "https://github.com/Searge/provision"
 keywords = ["ansible", "provisioning", "os"]
 classifiers = [
     "Operating System :: POSIX :: Linux",
     "Operating System :: MacOS",
-    "License :: OSI Approved :: MIT License",
+    "License :: OSI Approved :: BSD 3-Clause License",
     "Intended Audience :: System Administrators",
     "Intended Audience :: Developers",
     "Framework :: Ansible",
