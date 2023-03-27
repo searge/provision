@@ -1,0 +1,55 @@
+{
+    "folders": [
+        {
+            "path": ".."
+        }
+    ],
+    "settings": {
+        "yaml.schemas": {
+            "https://raw.githubusercontent.com/ansible/ansible-lint/main/src/ansiblelint/schemas/ansible.json#/$defs/playbook": "/ansible/*.yml",
+            "https://raw.githubusercontent.com/ansible/ansible-lint/main/src/ansiblelint/schemas/inventory.json": "/ansible/inventory/*.yml",
+            "https://raw.githubusercontent.com/ansible/ansible-lint/main/src/ansiblelint/schemas/ansible.json#/$defs/tasks": "/ansible/tasks/*.yml",
+            "https://taskfile.dev/schema.json": "/Taskfile.dist.yml"
+        },
+        "ansible.python.activationScript": ".venv/bin/activate",
+        "ansible.python.interpreterPath": "",
+        "ansible.ansible.path": ".venv/bin/ansible",
+        "ansible.validation.lint.path": ".venv/bin/ansible-lint",
+        "files.associations": {
+            "ansible/*.yml": "ansible",
+            "ansible/**/*.yml": "ansible",
+            ".config/*.yml": "yaml"
+        },
+        "python.languageServer": "Pylance",
+        "explorer.sortOrder": "type",
+        "editor.rulers": [
+            72,
+            79
+        ],
+    },
+    "extensions": {
+        "recommendations": [
+          // Code helpers
+          "redhat.ansible",
+          "redhat.vscode-yaml",
+          "ms-python.python",
+          "ms-python.vscode-pylance",
+          "task.vscode-task",
+          "samuelcolvin.jinjahtml",
+          "bungcip.better-toml",
+          "foxundermoon.shell-format",
+          "shakram02.bash-beautify",
+          "EditorConfig.EditorConfig",
+          // Visual helpers
+          "eamodio.gitlens",
+          "mhutchie.git-graph",
+          "usernamehw.errorlens",
+          "wayou.vscode-todo-highlight",
+          "coenraads.bracket-pair-colorizer-2",
+          // Theming
+          "github.github-vscode-theme",
+          "zhuangtongfa.material-theme",
+          "pkief.material-icon-theme"
+        ]
+      }
+}
