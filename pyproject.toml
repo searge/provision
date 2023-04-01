@@ -24,7 +24,7 @@ ansible = "*"
 cryptography = "^39.0.2"
 
 [tool.poetry.group.dev.dependencies]
-black = "^23.1.0"
+black = "^23.3.0"
 yamllint = "^1.29.0"
 ansible-lint = { version = "^6.14.3", markers = "platform_system != 'Windows'" }
 
