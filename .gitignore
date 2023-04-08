@@ -15,6 +15,9 @@
 # Pipenv
 /.venv
 
+# Vagrant
+.vagrant/
+
 # Project specific
 Taskfile.yml
 .env
