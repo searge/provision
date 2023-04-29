@@ -11,6 +11,7 @@
 # Tests
 /ansible/inventory/group_vars/test
 /ansible/inventory/test
+/ansible/test.yml
 
 # Pipenv
 /.venv
