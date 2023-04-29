@@ -12,7 +12,7 @@
             "https://taskfile.dev/schema.json": "/Taskfile.dist.yml"
         },
         "ansible.python.activationScript": ".venv/bin/activate",
-        "ansible.python.interpreterPath": "",
+        "ansible.python.interpreterPath": ".venv/bin/python",
         "ansible.ansible.path": ".venv/bin/ansible",
         "ansible.validation.lint.path": ".venv/bin/ansible-lint",
         "files.associations": {
@@ -25,6 +25,21 @@
         "editor.rulers": [
             72,
             79
+        ],
+        "todohighlight.keywords": [
+            {
+                "text": "MARK:",
+                "color": "#ebcb8b",
+                "backgroundColor": "#4c566a",
+                "overviewRulerColor": "grey",
+                "isWholeLine": true,
+            },
+            {
+                "text": "NOTE:",
+                "color": "#5E81AC",
+                "backgroundColor": "#EBCB8B",
+                "overviewRulerColor": "#81A1C1",
+            },
         ],
     },
     "extensions": {
@@ -45,7 +60,6 @@
           "mhutchie.git-graph",
           "usernamehw.errorlens",
           "wayou.vscode-todo-highlight",
-          "coenraads.bracket-pair-colorizer-2",
           // Theming
           "github.github-vscode-theme",
           "zhuangtongfa.material-theme",
