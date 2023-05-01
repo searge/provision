@@ -21,7 +21,7 @@ classifiers = [
 python = "^3.10"
 ansible-core = "^2.14"
 ansible = "*"
-cryptography = "^40.0.1"
+cryptography = "^40.0.2"
 
 [tool.poetry.group.dev.dependencies]
 black = "^23.3.0"
