@@ -7,6 +7,8 @@
 # Provisioning
 /ansible/roles/*
 /ansible/*.retry
+# Requirements need to be stored in the repo
+!/ansible/roles/requirements.yml
 
 # Tests
 /ansible/inventory/group_vars/test
