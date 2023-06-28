@@ -1,0 +1,41 @@
+[
+    {
+        "name": "fedora",
+        "cpus": 1,
+        "distro": "fedora",
+        "family": "redhat",
+        "gui": false,
+        "box": "rockylinux/9",
+        "ip_addr": "10.0.3.2",
+        "memory": "1024",
+        "no_share": false,
+        "app_port": "80",
+        "forwarded_port": "8007"
+    },
+    {
+        "name": "fedora",
+        "cpus": 1,
+        "distro": "fedora",
+        "family": "redhat",
+        "gui": false,
+        "box": "fedora/35-cloud-base",
+        "ip_addr": "10.0.3.3",
+        "memory": "1024",
+        "no_share": false,
+        "app_port": "80",
+        "forwarded_port": "8007"
+    },
+    {
+        "name": "mohave",
+        "box": "yzgyyang/macOS-10.14",
+        "distro": "macos",
+        "family": "macos",
+        "cpus": 1,
+        "gui": true,
+        "ip_addr": "10.0.3.4",
+        "memory": "1024",
+        "no_share": false,
+        "app_port": "80",
+        "forwarded_port": "8007"
+    }
+]

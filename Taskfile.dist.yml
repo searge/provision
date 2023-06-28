@@ -39,3 +39,24 @@ tasks:
     dir: "{{.USER_WORKING_DIR}}/ansible"
     cmds:
       - poetry run yamllint -c $YAMLLINT_CONFIG_FILE .
+
+  # Vagrant tasks:
+  start:
+    cmds:
+      - vagrant up --provider=virtualbox
+    desc: Start Virtualbox VM
+
+  stop:
+    cmds:
+      - vagrant halt
+    desc: Stop Virtualbox VM
+
+  destroy:
+    cmds:
+      - vagrant destroy -f
+    desc: Delete Virtualbox VM from disk
+
+  ssh:
+    cmds:
+      - vagrant ssh
+    desc: Start SSH session to Virtualbox VM
