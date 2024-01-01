@@ -38,13 +38,13 @@ test = ["coverage", "pip-tools", "pytest (>=7.2.0)", "pytest-mock", "pytest-plus
 
 [[package]]
 name = "ansible-core"
-version = "2.14.11"
+version = "2.14.13"
 description = "Radically simple IT automation"
 optional = false
 python-versions = ">=3.9"
 files = [
-    {file = "ansible-core-2.14.11.tar.gz", hash = "sha256:15cbcbdfeae2073cead428f671e313f8bbc46d14549016794e1dca0f0cc09298"},
-    {file = "ansible_core-2.14.11-py3-none-any.whl", hash = "sha256:66ca75e5c43014cc8d73eb784be886e19f16175c8a2d58d2c0df9f892534951d"},
+    {file = "ansible-core-2.14.13.tar.gz", hash = "sha256:4e1bb334f0c3226ab48c599efe49cd5fe03f25d4558bc06c274ade2ba3e2576a"},
+    {file = "ansible_core-2.14.13-py3-none-any.whl", hash = "sha256:65e96d04dce1e5dd415b4681d464f7f9a949d515f623145c4a8bc3468e75f3b0"},
 ]
 
 [package.dependencies]
