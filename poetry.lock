@@ -56,13 +56,13 @@ resolvelib = ">=0.5.3,<0.9.0"
 
 [[package]]
 name = "ansible-lint"
-version = "24.5.0"
+version = "24.6.1"
 description = "Checks playbooks for practices and behavior that could potentially be improved"
 optional = false
 python-versions = ">=3.10"
 files = [
-    {file = "ansible_lint-24.5.0-py3-none-any.whl", hash = "sha256:a0deb4d58ce267632a26f7e9daf91cd4cd8c2ed783ddbb588a95f86785df20cc"},
-    {file = "ansible_lint-24.5.0.tar.gz", hash = "sha256:cf1d9876c63cb26f6677170d4c64b18d8d944b359f8772cba73a2145f8b7a7ac"},
+    {file = "ansible_lint-24.6.1-py3-none-any.whl", hash = "sha256:a86ed91dbdff567ad6a5b374dcb098d5758d4a069eb1d0742048112bb0ef2ef3"},
+    {file = "ansible_lint-24.6.1.tar.gz", hash = "sha256:29896d6fcf5a648e79c4119e2789c5217fe1951f3c33384989920fbf523a3198"},
 ]
 
 [package.dependencies]
@@ -86,7 +86,7 @@ yamllint = ">=1.30.0"
 
 [package.extras]
 docs = ["mkdocs-ansible (>=0.2.0)", "pipdeptree (>=2.7.1)"]
-test = ["black", "coverage-enable-subprocess", "coverage[toml] (>=6.4.4)", "jmespath", "license-expression (>=30.3.0)", "mypy", "netaddr", "psutil", "pylint", "pytest (>=7.2.2)", "pytest-mock", "pytest-plus (>=0.6)", "pytest-xdist (>=2.1.0)", "ruamel-yaml-clib", "ruamel.yaml (>=0.17.31)", "types-jsonschema", "types-pyyaml"]
+test = ["black", "coverage-enable-subprocess", "coverage[toml] (>=6.4.4)", "jmespath", "license-expression (>=30.3.0)", "mypy", "netaddr", "psutil", "pylint", "pytest (>=7.2.2)", "pytest-mock", "pytest-plus (>=0.6)", "pytest-xdist (>=2.1.0)", "ruamel-yaml-clib", "ruamel.yaml (>=0.17.31)", "tox (>=4.0.0)", "types-jsonschema", "types-pyyaml"]
 
 [[package]]
 name = "attrs"
@@ -788,20 +788,6 @@ files = [
 
 [[package]]
 name = "wcmatch"
-version = "8.4.1"
-description = "Wildcard/glob file name matcher."
-optional = false
-python-versions = ">=3.7"
-files = [
-    {file = "wcmatch-8.4.1-py3-none-any.whl", hash = "sha256:3476cd107aba7b25ba1d59406938a47dc7eec6cfd0ad09ff77193f21a964dee7"},
-    {file = "wcmatch-8.4.1.tar.gz", hash = "sha256:b1f042a899ea4c458b7321da1b5e3331e3e0ec781583434de1301946ceadb943"},
-]
-
-[package.dependencies]
-bracex = ">=2.1.1"
-
-[[package]]
-name = "wcmatch"
 version = "8.5.2"
 description = "Wildcard/glob file name matcher."
 optional = false
@@ -850,4 +836,4 @@ test = ["big-O", "jaraco.functools", "jaraco.itertools", "jaraco.test", "more-it
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "38cd430b3ba5b2de88b112c0c23dd0145abf1af23415380a5eb964dcd0af0d56"
+content-hash = "6d7af84548bc32c403def65e92a21c4720ad29dfd790690127184b58d311013f"
