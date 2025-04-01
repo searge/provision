@@ -21,7 +21,7 @@ classifiers = [
 python = "^3.10"
 ansible-core = "^2.17"
 ansible = "*"
-cryptography = "^44.0.1"
+cryptography = "^44.0.2"
 jmespath = "^1.0.1"
 
 [tool.poetry.group.dev.dependencies]
