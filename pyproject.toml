@@ -25,7 +25,7 @@ cryptography = "^46.0.4"
 jmespath = "^1.0.1"
 
 [tool.poetry.group.dev.dependencies]
-black = "^25.12.0"
+black = "^26.1.0"
 yamllint = "^1.37.1"
 ansible-lint = { version = "^26.1.1", markers = "platform_system != 'Windows'" }
 
