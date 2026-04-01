@@ -17,22 +17,22 @@ ansible-core = ">=2.17.7,<2.18.0"
 
 [[package]]
 name = "ansible-compat"
-version = "25.8.2"
+version = "26.3.0"
 description = "Ansible compatibility goodies"
 optional = false
 python-versions = ">=3.10"
 groups = ["dev"]
 markers = "platform_system != \"Windows\""
 files = [
-    {file = "ansible_compat-25.8.2-py3-none-any.whl", hash = "sha256:c35fd18f3a8320123f881ad6a23c4125e323e7e559ae09b6279568690a583b8f"},
-    {file = "ansible_compat-25.8.2.tar.gz", hash = "sha256:c5ae1ff70938f1e009cfc7df66c9faad223a3ccd0ad6b57400de53b2459a6164"},
+    {file = "ansible_compat-26.3.0-py3-none-any.whl", hash = "sha256:4fb48f324383033cf24df5ccb63bca4da766cb4ebbd4bc9dbad91b108f512a73"},
+    {file = "ansible_compat-26.3.0.tar.gz", hash = "sha256:15f0ea5ff6fcc5587b6b11a4a436fdeefd0fd4a46afe92d4e483c28370082ae0"},
 ]
 
 [package.dependencies]
 ansible-core = ">=2.16"
 jsonschema = ">=4.6.0"
-packaging = ">=25.0"
-pyyaml = ">=6.0.2"
+packaging = ">=22.0"
+pyyaml = ">=6.0.1"
 subprocess-tee = ">=0.4.1"
 
 [[package]]
@@ -56,19 +56,19 @@ resolvelib = ">=0.5.3,<1.1.0"
 
 [[package]]
 name = "ansible-lint"
-version = "26.2.0"
+version = "26.4.0"
 description = "Checks playbooks for practices and behavior that could potentially be improved"
 optional = false
 python-versions = ">=3.10"
 groups = ["dev"]
 markers = "platform_system != \"Windows\""
 files = [
-    {file = "ansible_lint-26.2.0-py3-none-any.whl", hash = "sha256:6e06fe9e63c559097199b4c3da18b5f66045af8c0694d81f74f40791006da713"},
-    {file = "ansible_lint-26.2.0.tar.gz", hash = "sha256:cf3fdadae8bbcbd2f8fc077e3c7ebacbcf19cc6ade7b7db48c963e96601535e8"},
+    {file = "ansible_lint-26.4.0-py3-none-any.whl", hash = "sha256:f33c4823544a5a8e5e36614866e111d1a929eeffee5e84481ede10d524a9d6d6"},
+    {file = "ansible_lint-26.4.0.tar.gz", hash = "sha256:29e0438f8af685a4fec96f9ea3404a3beb50d2911bc8df43f283256954ceea5b"},
 ]
 
 [package.dependencies]
-ansible-compat = ">=25.8.2"
+ansible-compat = ">=26.3.0"
 ansible-core = ">=2.16.14"
 black = ">=24.3.0"
 cffi = ">=1.15.1"
@@ -1065,4 +1065,4 @@ dev = ["doc8", "flake8", "flake8-import-order", "rstcheck[sphinx]", "ruff", "sph
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.10"
-content-hash = "3abf4bf6462d99c1f8318cc75a1e8b3fdc031728f43e371404f973c694c42ead"
+content-hash = "09f6cdc0d14dcf6625aa2d1806bd2b5346fa3b878d79de4bb9474e911384c0fe"
